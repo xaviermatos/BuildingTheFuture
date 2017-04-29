@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> </title>
+        
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="materials.js"></script>
+        <script type="text/javascript" src="healthbar.js"></script>
+            <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+                  
+        <link rel="stylesheet" type="text/css" href="building.css">
+    </head>
+    <body> 
+    
+<form id = "materials">   
+ <div class = "row">
+    <div class="input-field col s6">
+    <select id="floor" name="floor">
+      <option value="" disabled selected>Choose your material for the Floor</option>
+      <option value="Wood">Wood</option>
+      <option value="Steel">Steel</option>
+      <option value="Concrete">Concrete</option>
+      <option value="Brick">Brick</option>
+    </select>
+    <label>Floor</label>
+  </div> 
+</div>
+
+ <div class = "row">
+    <div class="input-field col s6">
+    <select id="walls" name="walls">
+      <option value="" disabled selected>Choose your material for the Walls</option>
+      <option value="Wood">Wood</option>
+      <option value="Steel">Steel</option>
+      <option value="Concrete">Concrete</option>
+      <option value="Brick">Brick</option>
+    </select>
+    <label>Walls</label>
+  </div> 
+</div>
+
+ <div class = "row">
+    <div class="input-field col s6">
+    <select id="frame" name="frame">
+      <option value="" disabled selected>Choose your material for the Frame</option>
+      <option value="Wood">Wood</option>
+      <option value="Steel">Steel</option>
+      <option value="Concrete">Concrete</option>
+      <option value="Brick">Brick</option>
+    </select>
+    <label>Frame</label>
+  </div> 
+</div>
+
+ <div class = "row">
+    <div class="input-field col s6">
+    <select id="roof" name="roof">
+      <option value="" disabled selected>Choose your material for the Roof</option>
+      <option value="Wood">Wood</option>
+      <option value="Steel">Steel</option>
+      <option value="Concrete">Concrete</option>
+      <option value="Brick">Brick</option>
+    </select>
+    <label>Roof</label>
+  </div> 
+</div>
+
+  <button id="material_form_btn" class="btn waves-effect waves-light" type="submit" name="action">Simulate
+    <i class="material-icons right"></i>
+  </button>
+</form> 
+  <div class='house'></div>  <p id="output"></p>
+<div class="health-bar" data-total="1000" data-value="1000">
+  <div class="bar">
+  	  <div class="hit"></div>
+  </div>
+</div>
+<br />
+
+<button class="damage random">hit random</button>
+<button class="reset">reset</button>
+<div class="log">
+</div>
+    </body>
+</html>

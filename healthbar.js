@@ -72,11 +72,11 @@ var hp = 100
             disasterHurricane();
         }
         else if ((6 <= x) & (x <= 7)){
-          $("#output").html($("#output").html() + "<br/>" + "Flood! hit" + years);
+          $("#output").html($("#output").html() + "<br/>" + "Flood! hit " + years);
             console.log('disasterFlood')
         }
         else if ((8 <= x) & (x <= 10)){
-          $("#output").html($("#output").html() + "<br/>" + "Earthquake! hit" + years);
+          $("#output").html($("#output").html() + "<br/>" + "Earthquake! hit " + years);
             console.log('disasterEarthquake')
         }
         else{

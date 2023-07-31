@@ -1,3 +1,2 @@
 # BuildingTheFuture
-The ScriptEd Spring Hackathon 2017
-!
+The winning sponsored by Google ScriptEd Spring Hackathon 2017 project!
